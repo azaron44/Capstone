@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-//import axios from 'axios';
+import './SignUp.css';
+import axios from 'axios';
 class Signup extends Component {
   state = {
     firstName:'',
@@ -11,17 +12,17 @@ class Signup extends Component {
 
   signUpSubmitHandler = (event)=>{
     event.preventDefault();
-    const student = {
+    const customer = {
       firstName:this.state.firstName,
       lastName:this.state.lastName,
       email:this.state.email,
-      phone:this.phone,
-      password:this.password
+      phone:this.state.phone,
+      password:this.state.password
     }
-    //axios.post("http://localhost:8080/submitStudentDetails",student)
+    axios.post("http://localhost:8080/registerUser",customer)
     .then( (response) =>{
       //Route to a thank you page
-      //this.props.history.push('/thank-you');
+      this.props.history.push('/Home');
 
     } )
   }
@@ -47,9 +48,6 @@ class Signup extends Component {
     </div>
   </div>
   <div className="form-row">
-    <div className="col">
-      <input onChange={this.signUpChangeHandler} value={this.state.age} name="age" type="text" className="form-control" placeholder="Age"/>
-    </div>
     <div className="col">
       <input onChange={this.signUpChangeHandler} value={this.state.phone} name="phone" type="text" className="form-control" placeholder="Phone"/>
     </div>

@@ -1,0 +1,11 @@
+form{
+   
+    max-width: 400px;
+}
+col{
+    background-color: grey;
+}
+input.form-control{
+    background-color: rgb(184, 173, 173);
+
+}

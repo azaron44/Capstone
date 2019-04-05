@@ -14,21 +14,89 @@ import europe1 from '../../images/europe1.jpg';
 import virginIslands1 from '../../images/virginIslands1.jpg';
 import washington from '../../images/washington.jpg';
 import {Link} from 'react-router-dom';
+import sign2 from '../../images/sign2.jpg';
+import plane2 from '../../images/plane2.jpg';
+import hotel2 from '../../images/hotel2.jpg';
+import tour1 from '../../images/tour1.jpg';
 
 const Home =(props) =>  {
    
         return (
+					
+          <React.Fragment>				
+						{/*Section 1*/}
 
-          <React.Fragment>
             <div id="banner" className="container">
 						<section>
-							<p><h1>One Goal, One Passion... Help Create Travel Memories</h1></p>
-              <p>Imagine being able to go on vacation without the stress of planning it. Aisela Travel, LLC provides personalized travel services while planning your vacation experience. Our passion is traveling and we believe in providing a personal touch beyond just making your reservations.
+						<h1><p>One Goal, One Passion... Help Create Travel Memories</p></h1>
+              <p>Imagine being able to go on vacation without the stress of planning it. Aisela Travel, LLC provides personalized travel services while planning your vacation experience. Our passion is traveling and we believe in providing a personal touch beyond just making your reservations.  <br></br><br></br>
 ​
 ​Now imagine, being able to go anywhere you want to go. We have traveled extensively and have first hand knowledge of the destinations we book. We would love to plan your next vacation, cruise, family or group trip, weekend getaway, all-inclusive vacation, adventure or dream destination tour.	</p>
 							<a href="#" className="button medium">Read More</a>
 						</section>
 					</div>
+					<br></br><br></br>
+					<div id="banner" className="container">
+                    <ul>
+                    <img src={sign2}/>
+                    <li>We're dedicated to finding you the best value for your investment and offer advice, while maintaining an emphasis on customer service.</li><br></br><br></br>
+                    <li>When you book travel with us, our focus is always you and your unique needs.</li><br></br><br></br>
+                    <li>You can be assured that we will do our best to make sure that your travel experience is as memorable as possible.</li><br></br><br></br>
+                    <li>We'll devote time and effort to make sure you are happy with your travel options.</li><br></br><br></br>
+                    <li>​​We are committed to providing quality travel services that meet your needs.</li>
+                    </ul>
+                    </div>
+										<br></br><br></br>
+									
+										{/*Section 2*/}
+										
+										<div className="container-fluid">
+
+<div id="extra">
+						<div className="container">
+							<div className="row no-collapse-1">
+									<section className="4u"> <p className="image featured"><img src={plane2} alt=""/></p>
+									<div className="box">
+										<h1><p>Vacation Packages</p></h1>
+										<p>Get great vacation package deals for your next vacation get away or adventure.</p></div>
+								</section>
+								<section className="4u"> <p className="image featured"><img src={hotel2} alt=""/></p> 
+									<div className="box">
+										<h1><p>Hotel & Resort Reservatinos</p></h1>
+										<p>Stay at the best hotels and resorts in destinations all over the world. </p></div>
+								</section>
+								<section className="4u"> <p className="image featured"><img src={tour1} alt=""/></p>
+									<div className="box">
+										<h1><p>Tours and Travel Activites</p></h1>
+										<p>Experience all your destination has to offer by planning activities in advance.</p></div>
+								</section>
+								</div>
+								</div>
+								</div>
+								</div>
+								<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+
+								{/*Section 3*/}
+
+								<div id="banner" className="container">
+						<section>
+						<h1>	<p>Creating Memories, One Vacation at a Time...</p></h1>
+              <p>Where would you like to go? What destination is on your bucket list? Whether you know exactly where you want to go or if you need assistance finding the perfect destination, our goal is to turn your travel dreams into reality. <br></br><br></br>
+
+​The world is waiting to be explored! If your enjoy beaches, cultural experiences, museums, nature, outdoor adventures, shopping or just visiting a new place, any of these incredible destinations will inspire you for the trip of a lifetime.  <br></br><br></br>
+
+​Let's start planning your next life changing, memorable vacation experience! Contact us today at 314-690-1520 for more information about planning your next vacation to your desired destination! ​​</p>
+							<a href="#" className="button medium">Read More</a>
+						</section>
+						</div>
+
+						{/*Section 4*/}
+
+						<div id="banner" className="container">
+						<section>
+						<h1>	<p>Travel Destinations</p></h1>
+						</section>
+						</div>
 
                 <div className="container-fluid">
 
@@ -87,6 +155,8 @@ const Home =(props) =>  {
 							</div>
 						</div>
 					</div>
+
+					{/*Section 5*/}
           
 
 				
@@ -124,6 +194,7 @@ const Home =(props) =>  {
 					</div>
 
 	</div>
+	{/*Section 6 */}
 
 
 		<div id="footer" className="wrapper style2">
@@ -162,6 +233,7 @@ const Home =(props) =>  {
 				</section>
 			</div>
 		</div>
+		{/*Section 7 Footer */}
 
 	
 		<div id="copyright">
@@ -175,8 +247,9 @@ const Home =(props) =>  {
 					</ul>
 				</div>
 			</div>
-		</div>
+		</div>		
     </React.Fragment>
+		
         );
     
 }
