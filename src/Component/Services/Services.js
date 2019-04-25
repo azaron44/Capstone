@@ -11,7 +11,7 @@ class Services extends Component {
     render() {
         return (
             <div>
-                <p>Destination & cruise Vacation planning</p>
+                
                 <div id="banner" className="container">
 						<section>
 						<h1>	<p>Destiantion & Cruise Vacation Planning</p></h1>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../Header/Header';
 import SignUp from '../SignUp/SignUp';
 import {Route, withRouter} from 'react-router-dom';
+import Planner from '../Planner/Planner';
 
 //import AboutUs from '../AboutUs/AboutUs';
 
@@ -13,6 +14,7 @@ import Blog from '../Blog/Blog';
 import ContactUs from '../ContactUs/ContactUs';
 import Login from '../Login/Login';
 import About from '../About/About';
+import Form from '../Form/Form';
 class Layout extends Component {
     render() {
         let routes =(
@@ -39,10 +41,13 @@ class Layout extends Component {
                     <Route exact path ="/vacation-packages" component={VacationPackages}/>
                     <Route exact path ="/resources" component={Resources}/>
                     <Route exact path="/about-us" component={About} />
+                    <Route exact path="/my-trips" component={Planner} />
+                    <Route exact path="/form" component={Form} />
                     
  
                 </React.Fragment>
             )
+            
         }
         return (
             <React.Fragment>

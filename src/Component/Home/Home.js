@@ -18,6 +18,15 @@ import sign2 from '../../images/sign2.jpg';
 import plane2 from '../../images/plane2.jpg';
 import hotel2 from '../../images/hotel2.jpg';
 import tour1 from '../../images/tour1.jpg';
+import beach7 from '../../images/beach7.jpg';
+import flying1 from '../../images/flying1.jpg';
+import mexico2 from '../../images/mexico2.jpg';
+import hawaii4 from '../../images/hawaii4.jpg';
+import asia3 from '../../images/asia3.jpg';
+import mexico6 from '../../images/mexico6.jpg';
+import hawaii5 from '../../images/hawaii5.jpg';
+import europe3 from '../../images/europe3.jpg';	
+import island1 from '../../images/island1.jpg';
 
 const Home =(props) =>  {
    
@@ -25,6 +34,32 @@ const Home =(props) =>  {
 					
           <React.Fragment>				
 						{/*Section 1*/}
+						
+							{/* <img src={flying1}/> */}
+
+							<div id="extra">
+						<div className="container">
+							<div className="row no-collapse-1">
+									<section className="4u"> <p className="image featured"><img src={plane2} alt=""/></p>
+									<div className="box">
+										<h1><p>Vacation Packages</p></h1>
+										<p>Get great vacation package deals for your next vacation get away or adventure.</p></div>
+								</section>
+								<section className="4u"> <p className="image featured"><img src={hotel2} alt=""/></p> 
+									<div className="box">
+										<h1><p>Hotel & Resort Reservatinos</p></h1>
+										<p>Stay at the best hotels and resorts in destinations all over the world. </p></div>
+								</section>
+								<section className="4u"> <p className="image featured"><img src={tour1} alt=""/></p>
+									<div className="box">
+										<h1><p>Tours and Travel Activites</p></h1>
+										<p>Experience all your destination has to offer by planning activities in advance.</p></div>
+								</section>
+								</div>
+								</div>
+								</div>
+								
+								<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
             <div id="banner" className="container">
 						<section>
@@ -32,7 +67,7 @@ const Home =(props) =>  {
               <p>Imagine being able to go on vacation without the stress of planning it. Aisela Travel, LLC provides personalized travel services while planning your vacation experience. Our passion is traveling and we believe in providing a personal touch beyond just making your reservations.  <br></br><br></br>
 ​
 ​Now imagine, being able to go anywhere you want to go. We have traveled extensively and have first hand knowledge of the destinations we book. We would love to plan your next vacation, cruise, family or group trip, weekend getaway, all-inclusive vacation, adventure or dream destination tour.	</p>
-							<a href="#" className="button medium">Read More</a>
+							{/* <a href="#" className="button medium">Read More</a> */}
 						</section>
 					</div>
 					<br></br><br></br>
@@ -52,7 +87,7 @@ const Home =(props) =>  {
 										
 										<div className="container-fluid">
 
-<div id="extra">
+{/* <div id="extra">
 						<div className="container">
 							<div className="row no-collapse-1">
 									<section className="4u"> <p className="image featured"><img src={plane2} alt=""/></p>
@@ -74,7 +109,7 @@ const Home =(props) =>  {
 								</div>
 								</div>
 								</div>
-								<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+								<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br> */}
 
 								{/*Section 3*/}
 
@@ -86,7 +121,7 @@ const Home =(props) =>  {
 ​The world is waiting to be explored! If your enjoy beaches, cultural experiences, museums, nature, outdoor adventures, shopping or just visiting a new place, any of these incredible destinations will inspire you for the trip of a lifetime.  <br></br><br></br>
 
 ​Let's start planning your next life changing, memorable vacation experience! Contact us today at 314-690-1520 for more information about planning your next vacation to your desired destination! ​​</p>
-							<a href="#" className="button medium">Read More</a>
+							{/* <a href="#" className="button medium">Read More</a> */}
 						</section>
 						</div>
 
@@ -108,19 +143,19 @@ const Home =(props) =>  {
 										<p>Carribbean</p>
 										<Link to={"https://www.google.com/destination?q=Caribbean&safe=active&site=search&output=search&dest_mid=/m/0261m&sa=X&ved=0ahUKEwifjv_Px4bcAhVrk-AKHWtUBDsQri4IgAIwGA#dest_mid=/m/0261m&tcfs=EhoaGAoKMjAxOS0wNC0xNxIKMjAxOS0wNC0yMQ"} className="button">Read More</Link> </div>
 								</section>
-								<section className="4u"> <a href="https://www.google.com/destination?q=mexico&safe=active&rlz=1CAHPZQ_enUS803&site=search&output=search&dest_mid=/m/0b90_r&sa=X&ved=0ahUKEwjO9Y2Tq4bcAhUId98KHdvkAz4Qri4I1wEwIA#dest_mid=/m/0b90_r&tcfs=EhoaGAoKMjAxOC0wNy0yMBIKMjAxOC0wNy0yNA" className="image featured"><img src={mexico} alt=""/></a>
+								<section className="4u"> <a href="https://www.google.com/destination?q=mexico&safe=active&rlz=1CAHPZQ_enUS803&site=search&output=search&dest_mid=/m/0b90_r&sa=X&ved=0ahUKEwjO9Y2Tq4bcAhUId98KHdvkAz4Qri4I1wEwIA#dest_mid=/m/0b90_r&tcfs=EhoaGAoKMjAxOC0wNy0yMBIKMjAxOC0wNy0yNA" className="image featured"><img src={mexico6} alt=""/></a>
 									<div className="box">
 										<p>Mexico</p>
 										<a href="https://www.google.com/destination?q=mexico&safe=active&rlz=1CAHPZQ_enUS803&site=search&output=search&dest_mid=/m/0b90_r&sa=X&ved=0ahUKEwjO9Y2Tq4bcAhUId98KHdvkAz4Qri4I1wEwIA#dest_mid=/m/0b90_r&tcfs=EhoaGAoKMjAxOC0wNy0yMBIKMjAxOC0wNy0yNA" className="button">Read More</a> </div>
 								</section>
-								<section className="4u"> <a href="https://www.google.com/destination?q=Hawaii&safe=active&site=search&output=search&dest_mid=/m/03gh4&sa=X&ved=0ahUKEwijjKqHrYbcAhXQTN8KHckOCTgQri4InAIwIQ#dest_mid=/m/03gh4&tcfs=EhoaGAoKMjAxOC0wNy0yMBIKMjAxOC0wNy0yNA" className="image featured"><img src={hawai3} alt=""/></a>
+								<section className="4u"> <a href="https://www.google.com/destination?q=Hawaii&safe=active&site=search&output=search&dest_mid=/m/03gh4&sa=X&ved=0ahUKEwijjKqHrYbcAhXQTN8KHckOCTgQri4InAIwIQ#dest_mid=/m/03gh4&tcfs=EhoaGAoKMjAxOC0wNy0yMBIKMjAxOC0wNy0yNA" className="image featured"><img src={hawaii4} alt=""/></a>
 									<div className="box">
 										<p>Hawaii.</p>
 										<a href="https://www.google.com/destination?q=Hawaii&safe=active&site=search&output=search&dest_mid=/m/03gh4&sa=X&ved=0ahUKEwijjKqHrYbcAhXQTN8KHckOCTgQri4InAIwIQ#dest_mid=/m/03gh4&tcfs=EhoaGAoKMjAxOC0wNy0yMBIKMjAxOC0wNy0yNA" className="button">Read More</a> </div>
 								</section>
 							</div>
 							<div className="row no-collapse-1">
-								<section className="4u"> <a href="https://www.google.com/destination?q=Asia&safe=active&site=search&output=search&dest_mid=/m/0j0k&sa=X&ved=0ahUKEwjH3e6Yr4bcAhVnTt8KHewoCU0Qri4I_wEwFw#dest_mid=/m/0j0k&tcfs=EhwaGAoKMjAxOS0wNC0xNxIKMjAxOS0wNC0yMSAC" className="image featured"><img src={asia} alt=""/></a>
+								<section className="4u"> <a href="https://www.google.com/destination?q=Asia&safe=active&site=search&output=search&dest_mid=/m/0j0k&sa=X&ved=0ahUKEwjH3e6Yr4bcAhVnTt8KHewoCU0Qri4I_wEwFw#dest_mid=/m/0j0k&tcfs=EhwaGAoKMjAxOS0wNC0xNxIKMjAxOS0wNC0yMSAC" className="image featured"><img src={asia3} alt=""/></a>
 									<div className="box">
 										<p>Asia</p>
 										<a href="https://www.google.com/destination?q=Asia&safe=active&site=search&output=search&dest_mid=/m/0j0k&sa=X&ved=0ahUKEwjH3e6Yr4bcAhVnTt8KHewoCU0Qri4I_wEwFw#dest_mid=/m/0j0k&tcfs=EhwaGAoKMjAxOS0wNC0xNxIKMjAxOS0wNC0yMSAC" className="button">Read More</a> </div>
@@ -136,12 +171,12 @@ const Home =(props) =>  {
 										<a href="https://www.google.com/destination?q=Central+America&safe=active&site=search&output=search&dest_mid=/m/01tzh&sa=X&ved=0ahUKEwiqisrpt4bcAhVPTt8KHcTjDzkQri4IhwIwGg#dest_mid=/m/01tzh&tcfs=EhoaGAoKMjAxOS0wNC0xNxIKMjAxOS0wNC0yMQ" className="button">Read More</a> </div>
 								</section>
                 <div className="row no-collapse-1">
-								<section className="4u"> <a href="https://www.google.com/destination?q=Europe&safe=active&site=search&output=search&dest_mid=/m/02j9z&sa=X&ved=0ahUKEwjx66e5vIbcAhUFVN8KHaQpDlMQri4I9AEwGQ#dest_mid=/m/02j9z&tcfs=EhwaGAoKMjAxOS0wNC0xNxIKMjAxOS0wNC0yMSAB" className="image featured"><img src={europe1} alt=""/></a>
+								<section className="4u"> <a href="https://www.google.com/destination?q=Europe&safe=active&site=search&output=search&dest_mid=/m/02j9z&sa=X&ved=0ahUKEwjx66e5vIbcAhUFVN8KHaQpDlMQri4I9AEwGQ#dest_mid=/m/02j9z&tcfs=EhwaGAoKMjAxOS0wNC0xNxIKMjAxOS0wNC0yMSAB" className="image featured"><img src={europe3} alt=""/></a>
 									<div className="box">
 										<p>Europe</p>
 										<a href="https://www.google.com/destination?q=Europe&safe=active&site=search&output=search&dest_mid=/m/02j9z&sa=X&ved=0ahUKEwjx66e5vIbcAhUFVN8KHaQpDlMQri4I9AEwGQ#dest_mid=/m/02j9z&tcfs=EhwaGAoKMjAxOS0wNC0xNxIKMjAxOS0wNC0yMSAB" className="button">Read More</a> </div>
 								</section>
-								<section className="4u"> <a href="https://www.google.com/destination?q=Europe&safe=active&site=search&output=search&dest_mid=/m/02j9z&sa=X&ved=0ahUKEwjx66e5vIbcAhUFVN8KHaQpDlMQri4I9AEwGQ#dest_mid=/m/02j9z&tcfs=EhwaGAoKMjAxOS0wNC0xNxIKMjAxOS0wNC0yMSAB" className="image featured"><img src={virginIslands1} alt=""/></a>
+								<section className="4u"> <a href="https://www.google.com/destination?q=Europe&safe=active&site=search&output=search&dest_mid=/m/02j9z&sa=X&ved=0ahUKEwjx66e5vIbcAhUFVN8KHaQpDlMQri4I9AEwGQ#dest_mid=/m/02j9z&tcfs=EhwaGAoKMjAxOS0wNC0xNxIKMjAxOS0wNC0yMSAB" className="image featured"><img src={island1} alt=""/></a>
 									<div className="box">
 										<p>U.S. Virgin Islands</p>
 										<a href="https://www.google.com/destination?q=Europe&safe=active&site=search&output=search&dest_mid=/m/02j9z&sa=X&ved=0ahUKEwjx66e5vIbcAhUFVN8KHaQpDlMQri4I9AEwGQ#dest_mid=/m/02j9z&tcfs=EhwaGAoKMjAxOS0wNC0xNxIKMjAxOS0wNC0yMSAB" className="button">Read More</a> </div>
@@ -160,7 +195,7 @@ const Home =(props) =>  {
           
 
 				
-					<div id="main">
+					{/* <div id="main">
 						<div className="container">
 							<div className="row"> 
 								
@@ -193,11 +228,11 @@ const Home =(props) =>  {
 						</div>
 					</div>
 
-	</div>
+	</div> */}
 	{/*Section 6 */}
 
 
-		<div id="footer" className="wrapper style2">
+		{/* <div id="footer" className="wrapper style2">
 			<div className="container">
 				<section>
 					<header className="major">
@@ -232,11 +267,11 @@ const Home =(props) =>  {
 					</form>
 				</section>
 			</div>
-		</div>
+		</div> */}
 		{/*Section 7 Footer */}
 
 	
-		<div id="copyright">
+		{/* <div id="copyright">
 			<div className="container">
 				<div className="copyright">
 					<p>Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)</p>
@@ -247,7 +282,7 @@ const Home =(props) =>  {
 					</ul>
 				</div>
 			</div>
-		</div>		
+		</div> */}		</div> </div> {/*  <--- delete this closing div after taking out comment for section 6*/}
     </React.Fragment>
 		
         );

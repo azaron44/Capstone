@@ -22,7 +22,7 @@ class Signup extends Component {
     axios.post("http://localhost:8080/registerUser",customer)
     .then( (response) =>{
       //Route to a thank you page
-      this.props.history.push('/Home');
+      this.props.history.push('/login');
 
     } )
   }
@@ -36,33 +36,40 @@ class Signup extends Component {
   }
     render() {
         return (
-
+            
             <form onSubmit={this.signUpSubmitHandler} className="container">
-            <h3>Sign Up!</h3>
+            
   <div className="form-row">
     <div className="col">
+    <label for="firstName">First Name</label>
       <input onChange={this.signUpChangeHandler} value={this.state.firstName} name="firstName" type="text" className="form-control" placeholder="First Name"/>
     </div>
     <div className="col">
-      <input onChange={this.signUpChangeHandler} value={this.state.lastName} name="lastName" type="text" className="form-control" placeholder="Last name"/>
+    <label>Last Name</label>
+      <input onChange={this.signUpChangeHandler} value={this.state.lastName} name="lastName" type="text" className="form-control" placeholder="Last Name"/>
     </div>
   </div>
   <div className="form-row">
     <div className="col">
+    <label>Phone Number</label>
       <input onChange={this.signUpChangeHandler} value={this.state.phone} name="phone" type="text" className="form-control" placeholder="Phone"/>
     </div>
   </div>
   <div className="form-row">
     <div className="col">
+    <label for="email">Email</label>
       <input onChange={this.signUpChangeHandler} value={this.state.email} name="email" type="text" className="form-control" placeholder="Email"/>
     </div>
     <div className="col">
+    <label id="eader">Password</label>
       <input onChange={this.signUpChangeHandler} value={this.state.password} name="password" type="password" className="form-control" placeholder="Password"/>
     </div>
     
     <button type="submit">Sign Up</button>
   </div>
 </form>
+
+
            
         );
     }

@@ -43,7 +43,7 @@ class Login extends Component {
             <div>
                 <div className="bg-img">
   <form onSubmit={this.signInSubmitHandler} className="container">
-    <h1>Login</h1><br></br>
+    
 
     <label for="email"><b>Email</b></label>
     <input onChange={this.signInChangeHandler} type="text" placeholder="Enter Email" name="email" required/>

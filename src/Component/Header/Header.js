@@ -49,32 +49,54 @@ class Header extends Component {
 
     let links = (
       <React.Fragment>
-        <li className="active"><Link to={"/Home"}>Homepage</Link></li>
+        {/* <li className="active"><Link to={"/Home"}>Homepage</Link></li> */}
         <li><Link to={"/services"}>Services</Link></li>
         <li><Link to={"/vacation-packages"}>Vacation Packages</Link></li>
-        <li><Link to={"/resources"}>Resources</Link></li>
+        {/* <li><Link to={"/resources"}>Resources</Link></li> */}
         <li><Link to={"/about-us"}>About</Link></li>
         <li><Link to={"/contact-us"}>Contact Us</Link></li>
-        <li><Link to={"/blog"}>Blog</Link></li>
+        {/* <li><Link to={"/blog"}>Blog</Link></li> */}
         <li><Link to={"/login"}>Login</Link></li>
         <li><Link to={"/sign-up"}>Sign Up</Link></li>
       </React.Fragment>
     );
 
     if (localStorage.getItem('loggedInUser')) {
-      links = (
-        <React.Fragment>
-          <li className="active"><Link to={"/Home"}>Homepage</Link></li>
-        <li><Link to={"/services"}>Services</Link></li>
-        <li><Link to={"/vacation-packages"}>Vacation Packages</Link></li>
-        <li><Link to={"/resources"}>Resources</Link></li>
-        <li><Link to={"/about-us"}>About</Link></li>
-        <li><Link to={"/contact-us"}>Contact Us</Link></li>
-        <li><Link to={"/blog"}>Blog</Link></li>
-        <li>< button onClick={this.signOut} >Logout</button></li>
-        </React.Fragment>
+      const user = JSON.parse(localStorage.getItem('loggedInUser'));
+      
+      if(user.role == 'admin'){
+        links = (
+          <React.Fragment>
+          <li className="active"><Link to={"/my-trips"}>Trip Planning</Link></li>
+          <li><Link to={"/services"}>Services</Link></li>
+          <li><Link to={"/vacation-packages"}>Vacation Packages</Link></li>
+          {/* <li><Link to={"/resources"}>Resources</Link></li> */}
+          <li><Link to={"/about-us"}>About</Link></li>
+          {/* <li><Link to={"/contact-us"}>Contact Us</Link></li> */}
+          {/* <li><Link to={"/blog"}>Blog</Link></li> */}
+          {/* <li><Link to={"/form"}>Form</Link></li> */}
+          <li>< button onClick={this.signOut} className="" >Logout</button></li>
+          </React.Fragment>
 
-      )
+        )
+      }else{
+        links = (
+          <React.Fragment>
+            
+            {/* <li className="active"><Link to={"/my-trips"}>My Trips</Link></li> */}
+            {/* <li><Link to={"/form"}>Form</Link></li> */}
+          <li><Link to={"/services"}>Services</Link></li>
+          <li><Link to={"/vacation-packages"}>Vacation Packages</Link></li>
+          {/* <li><Link to={"/resources"}>Resources</Link></li> */}
+          <li><Link to={"/about-us"}>About Us</Link></li>
+          {/* <li><Link to={"/contact-us"}>Contact Us</Link></li> */}
+          {/* <li><Link to={"/blog"}>Blog</Link></li> */}
+          <li>< button onClick={this.signOut} className="" >Logout</button></li>
+          </React.Fragment>
+  
+        )
+      }
+      
     }
 
 
@@ -83,8 +105,8 @@ class Header extends Component {
       
       <div id="header" class="skel-panels-fixed">
         <div id="logo">
-          <h1><Link to={"/"}></Link></h1>
-          <span class="tag">by TEMPLATED</span>
+          <h1><Link to={"/"}>Aisela Travels</Link></h1>
+          
         </div>
         <nav id="nav">
           <ul>

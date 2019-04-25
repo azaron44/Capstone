@@ -13,15 +13,39 @@ class VacationPackages extends Component {
                
                 <div id="banner" className="container">
 						<section>
-						<h1><p>Plan Your Next Vacation with Aisela Travel, LLC</p></h1>
+						<h1><p>Plan Your Next Vacation with Aisela Travels</p></h1>
               <p>Are you ready to experience moments that will last a lifetime? Are you dreaming of a getaway? Are you ready to make your bucket list destinations a reality? <br></br><br></br>
 
 ​We are here to help make sure your travel experience is hassle free, fun and relaxing! ​Let's start planning your next vacation today! Contact us today at 314-690-1520 for a free travel consultation or to request a travel quote.
 </p>
-							<a href="#" className="button medium">Read More</a>
+							
 						</section>
 					</div>
                     <br></br><br></br>
+
+                    <div id="extra">
+						<div className="container">
+							<div className="row no-collapse-1">
+									<section className="4u"> <p className="image featured"><img src={people1} alt=""/></p>
+									<div className="box">
+										<h1><p>Group trips and activites</p></h1>
+										<p></p></div>
+								</section>
+								<section className="4u"> <p className="image featured"><img src={drink1} alt=""/></p> 
+									<div className="box">
+										<h1><p>All inclusive vaction & activities</p></h1>
+										<p></p></div>
+								</section>
+								<section className="4u"> <p className="image featured"><img src={couple1} alt=""/></p>
+									<div className="box">
+										<h1><p>Romantic Getaways</p></h1>
+										<p></p></div>
+								</section>
+								</div>
+								</div>
+								</div>
+								
+								<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
                     {/*section 2*/}
 
@@ -42,6 +66,8 @@ class VacationPackages extends Component {
                     <br></br><br></br>
 
                     {/*section 3*/}
+
+                    
 
                     <div id="banner" className="container">
 						<section>
